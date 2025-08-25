@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}header{
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+   
+
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 50px;
+
+
+}
+header div .navBar {
+align-items: center;
+
+}
+
+header div .navBar a  {
+
+
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    &:hover{
+        background-color: #e2e6ea;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+
+}
+@media (max-width: 768px) {
+    header div{
+
+    gap: 0px;
+
+
+}
+    header .logo{
+        margin-bottom: 10px;
+        margin-left: 21px;
+
+
+    }
+
+  
+    header div {
+        flex-direction: column;
+        align-items:center;
+
+
+   
+    }
+    header div .navBar a {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 10px;
+    
+
+    }
+   
+    header .navBar a{
+           background-color: #828f9d;
+              border-radius: 5px;
+              margin-left: 20px;
+              margin-right: 20px;
+              width: 300px;
+             
+         
+           font-size: 20px;
+           padding: 10px;
+           transition: all 0.3s ease;
+    }
+     header .navBar a:hover{
+     
+           transform: scale(1.05);
+    }
+
+
+}
+
+
+
+section .about-as {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+    color: #333;
+}
+.about-content  {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 120px;
+    margin-top: 20px;
+    padding: 20px;
+   
+
+
+}
+.about-content .about-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-content .about-text {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+.about-content .about-eth {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+.about-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+.about-images img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #f8f9fa;
+
+
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 60px;
+}
